@@ -1,0 +1,104 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different HTML Tables</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Simple Table</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+    <h2>Table with Merged Cells</h2>
+    <table>
+        <tr>
+            <th colspan="2">Full Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>28</td>
+        </tr>
+    </table>
+
+    <h2>Striped Table</h2>
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+        </tr>
+        <tr style="background-color: #f9f9f9;">
+            <td>Laptop</td>
+            <td>$800</td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td>$500</td>
+        </tr>
+        <tr style="background-color: #f9f9f9;">
+            <td>Tablet</td>
+            <td>$300</td>
+        </tr>
+    </table>
+
+    <h2>Borderless Table</h2>
+    <table style="border: none;">
+        <tr>
+            <th style="border: none;">Department</th>
+            <th style="border: none;">Employees</th>
+        </tr>
+        <tr>
+            <td style="border: none;">HR</td>
+            <td style="border: none;">10</td>
+        </tr>
+        <tr>
+            <td style="border: none;">IT</td>
+            <td style="border: none;">25</td>
+        </tr>
+    </table>
+
+    <h2>Table with Rowspan</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th rowspan="2">Age</th>
+        </tr>
+        <tr>
+            <td>Emma</td>
+        </tr>
+        <tr>
+            <td>David</td>
+            <td>35</td>
+        </tr>
+    </table>
+</body>
+</html>
